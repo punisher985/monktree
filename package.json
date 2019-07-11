@@ -23,5 +23,13 @@
   },
   "devDependencies": {
     "mocha": "^6.1.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/punisher985/monktree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/punisher985/monktree/issues"
+  },
+  "homepage": "https://github.com/punisher985/monktree#readme"
 }
