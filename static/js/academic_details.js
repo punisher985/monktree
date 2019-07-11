@@ -91,6 +91,13 @@
     var meerabai = ["Electronics Communicataion & Engineering", "Architecht Assistantship"];
     var chhotu = ["Electrical Engineering", "Electronics Communicataion & Engineering", "Mechanical Engineering",
                   "Civil Engineering", "Architecht Assistantship", "Information Technology", "Digital Electronics"];
+    var igdtu = ["Polymer Engineering","Chemical Engineering","Electrical Engineering","Electronics Communicataion & Engineering",
+                "Mechanical Engineering","Mechanical Maintainence & Engineering","Computer Science & Engineering","Civil Engineering",
+                "Civil Engineering(spl. In Construction)","Architecht Assistantship","Information Technology","Digital Electronics",
+                "Medical Electronics","Bachelor  in Computer Application","Bachelor of Vocational","Garment Fabrication & Technology",
+                "Automobile Engineering","Printing Technology","Production Engineering","Tool And Die Making","Fashion Designing",
+                "Applied Chemistry","Applied Mathematics","Applied Physics","Biotechnology	design","Instrumentation And Control	Management",
+                "Applied Science","Electrical Electronics & Engineering","Nano Technology","Food Technology","Aero Space"]              
 
     var colleges = document.getElementById("2");
     var streams = document.getElementById("3");
