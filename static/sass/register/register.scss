@@ -1,0 +1,119 @@
+@import "register_mixins";
+@import "register_variables";
+
+html {
+  background: url("../img/next-top.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+}
+
+.box {
+  h1 {
+    font-family: Segoe UI;
+    margin-top: 25%;
+    font-size: 400%;
+    padding: 5%;
+    text-align: center;
+    span{
+      color: $orange;
+      font-size: 200%;
+      font-family: Segoe UI;
+    }
+  }
+  .fname{
+    @include inputs;
+    width: 868px;
+    &:focus{
+      width: 868px;
+    }
+  }
+
+  input[type="email"] {
+    @include inputs;
+    margin-top: 5%;
+    width: 868px;
+    &:focus{
+      width: 868px;
+    }
+  }
+
+  .contact{
+    @include inputs;
+    margin-top: 5%;
+    font-size: 40px;
+    margin-left: 5%;
+    display: inline-block;
+    width: 407px;
+    &:focus{
+      width: 429px;
+    }
+  }
+
+  .altcontact{
+    @include inputs;
+    margin-top: 5%;
+    font-size: 40px;
+    margin-left: 5%;
+    display:inline-block;
+    width: 407px;
+    &:focus{
+      width: 429px;
+    }
+  }
+
+  .address{
+    @include inputs;
+    margin-top: 5%;
+    width: 868px;
+    &:focus{
+      width: 868px;
+    }
+  }
+
+  .city{
+    @include inputs;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 290px;
+    display: inline-block;
+    &:focus{
+      width: 290px;
+    }
+  }
+  .state{
+    @include inputs;
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 290px;
+    display: inline-block;
+    &:focus{
+      width: 290px;
+    }
+  }
+  .pin{
+    @include inputs;
+    margin-top: 5%;
+    width: 235px;
+    margin-left: 2%;
+    display: inline-block;
+    &:focus{
+      width: 235px;
+    }
+  }
+
+  input[type="submit"] {
+    @include buttons;
+    margin-top: 5%;
+  }
+
+}
+
+.foot-img{
+  text-align: center;
+  margin-top: 10%;
+  img{
+    height: 3%;
+    width: 20%;
+  }
+}

@@ -1,0 +1,44 @@
+@import "forgot_mixins";
+@import "forgot_variables";
+
+html {
+  background: url("../img/next-top.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+}
+
+.fget{
+  margin-top: 50%;
+  font-family: Segoe UI;
+  .broke{
+    height: 200px;
+    margin-left: 35%;
+  }
+  h1{
+    color: $orange;
+    font-size: 400%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  p{
+    font-size: 300%;
+    text-align: center;
+    margin-bottom: 30%;
+  }
+  .regemail{
+    @include inputs;
+    height: 55px;
+    width: 868px;
+    &:focus{
+      width: 868px;
+    }
+  }
+  .regbtn{
+    @include buttons;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 45%;
+  }
+}

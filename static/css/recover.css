@@ -1,0 +1,22 @@
+html {
+  background: url("../img/next-top.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0; }
+
+.recover {
+  margin-top: 50%;
+  font-family: Segoe UI; }
+  .recover .broke {
+    height: 200px;
+    margin-left: 35%;
+    margin-bottom: 25%; }
+  .recover h1 {
+    color: #FE4855;
+    font-size: 600%;
+    text-align: center;
+    margin-bottom: 8%; }
+  .recover p {
+    font-size: 300%;
+    text-align: center;
+    margin-bottom: 20%; }

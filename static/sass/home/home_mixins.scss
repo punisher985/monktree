@@ -1,0 +1,47 @@
+
+@mixin inputs{
+      font-family: Segoe UI;
+      border: 0;
+      font-size: 50px;
+      background-repeat: no-repeat;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid $orange;
+      padding: 14px 10px;
+      width: 682px;
+      height: 121px;
+      font-weight: 400px;
+      outline: none;
+      color: black;
+      border-radius: 50px;
+      transition: 0.25s;
+
+      &:focus{
+      width: 868px;
+      border-color: #3498db;
+      }
+}
+
+@mixin buttons{
+  font-family: Segoe UI;
+  border: 0;
+  font-size: 50px;
+  background-image: $colour;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #FE4855;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  height: 100px;
+  width: 280px;
+  border-radius: 50px;
+  transition: 0.25s;
+  cursor: pointer;
+
+  &:hover{
+  background: #2ecc71;
+  }
+}
