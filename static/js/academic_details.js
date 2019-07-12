@@ -97,7 +97,7 @@
                 "Medical Electronics","Bachelor  in Computer Application","Bachelor of Vocational","Garment Fabrication & Technology",
                 "Automobile Engineering","Printing Technology","Production Engineering","Tool And Die Making","Fashion Designing",
                 "Applied Chemistry","Applied Mathematics","Applied Physics","Biotechnology	design","Instrumentation And Control	Management",
-                "Applied Science","Electrical Electronics & Engineering","Nano Technology","Food Technology","Aero Space"]              
+                "Applied Science","Electrical Electronics & Engineering","Nano Technology","Food Technology","Aero Space"];
 
     var colleges = document.getElementById("2");
     var streams = document.getElementById("3");
@@ -195,6 +195,14 @@
         var opt1 = document.createElement('option');
         opt1.innerHTML = chhotu[i];
         opt1.value = chhotu[i];
+        streams.appendChild(opt1);
+      }
+    }
+    else if (selected_stream) {
+        for (var i = 0; i < igdtu.length; i++) {
+        var opt1 = document.createElement('option');
+        opt1.innerHTML = igdtu[i];
+        opt1.value = igdtu[i];
         streams.appendChild(opt1);
       }
     }
