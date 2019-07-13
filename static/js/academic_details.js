@@ -7,6 +7,7 @@
                  "Netaji Subhas Institute Of Technology",
                  "Indraprasth Institute Of Information Technology",
                  "National Institute Of Technology",
+                 "JIMS Engineering Management Technical Campus, NOIDA",
                  "Maharaja Surajmal Institute Of Technology",
                  "Bhagwan Parshuram Institute Of Technology",
                  "HMR Institute Of Technology",
@@ -14,8 +15,8 @@
                  "Noida Institute Of Education And Technology",
                  "Amity University",
                  "Sharda University",
-                 "Manav Rachna",
-                 "BML Munjal"];
+                 "Manav Rachna University",
+                 "BML Munjal University"];
     var diploma = ["Guru Nanak Dev Institute Of Technology","Ambedkar Institute Of Technology",
                      "Aryabhatt Institute Of Technology",
                      "Pusa Institute Of Technology",
