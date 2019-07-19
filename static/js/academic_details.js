@@ -28,8 +28,52 @@
                      "Kasturba Institute Of Technology",
                      "Meerabai Institute Of Technology",
                      "Chhotu Ram Rural Institute Of Technology"];
-    var bsc = ["Berlin", "Frankfurt", "Hannover", "Bonn"];
-    var bca = ["Berlin", "Frankfurt", "Hannover", "Bonn"];
+    var bsc = ["Acharya Narendra Dev College",
+               "Aryabhatta College",
+               "Atma Ram Sanatan Dharma College",
+               "Bhaskraycharya College of Applied Sciences",
+               "College of Vocational Studies",
+               "Deen Dayal Upadhyaya College",
+               "Dayal Singh College",
+               "Hans Raj College",
+               "Indraprastha College for Women",
+               "Kalindi College",
+               "Keshav Mahavidyalaya",
+               "Mata Sundri College for Women",
+               "P.G.D.A.V. College",
+               "Ram Lal Anand College",
+               "Ramanujan College",
+               "Shaheed Rajguru College of App.Sci. for Women",
+               "Shaheed Sukhdev College of Business Studies",
+               "Shyama Prasad Mukherjee College",
+               "Sri Guru Gobind Singh College of Commerce",
+               "Sri Guru Tegh Bahadur Khalsa College",
+               "Jamia Milia Hamdard",
+               "Jamia Milia Islamia"];
+    var bca = ["BLS Institute of Technology Management	Delhi-Rohtak Road, Jakhoda",
+               "Institute of Information Technology and Management	Janakpuri",
+               "Chandra Prabhu Jain College of Higher Studies	Narela",
+               "Institute of Innovation Technology and Management	Janakpuri",
+               "New Delhi Institute of Management	Okhala",
+               "Fairfield Institute of Management & Technology	Kapashera",
+               "Sri Guru Tegh Bahadur Institute of Management & Information Technology",
+               "Trinity Institute of Higher Education	Dwarka",
+               "Kalka Institute of Research and Advanced Studies	Alaknanda",
+               "Vivekananda Institute of Management Studies	Pitampura",
+               "Maharaja Surajmal Institute	Janakpuri",
+               "Sirifort College of Computer Technology & Management	Rohini",
+               "Trinity Institute of Professional Studies	Dwarka",
+               "Ambedkar Integrated Institute of Information and Technology	Shakarpur",
+               "Integrated Institute of Technology	Dwarka",
+               "Jagan Institute of Management Studies",
+               "Jagannath International Management School	Vasant Kunj",
+               "JIMS Engineering Management Technical Campus (JEMTEC)",
+               "Kamal Institute of Higher Education and Advanced Technology (KIHEAT)",
+               "R.C. Institute Of Technology (RCIT)",
+               "Shree Ganpati Institute of Technology (SGIT)",
+               "BM Institute of Engineering and Technology",
+               "Jamia Milia Islamia",
+               "Jamia Hamdard"];
 
     var courses = document.getElementById("1");
     var colleges = document.getElementById("2");
@@ -76,7 +120,7 @@
                       "Digital Electronics","Medical Electronics","Bachelor in Computer Application",
                       "Bachelor of Vocational","Computer Science & Engineering"];
     var aryabhatt = ["Electrical Engineering", "Mechanical Engineering", "Mechanical Maintainence & Engineering",
-                      "Architecht Assistantship","Garment Fabrication & Technology", "Bachelor of Vocational"];
+                      "Architecht Assistantship","Civil Engineering","Garment Fabrication & Technology", "Bachelor of Vocational"];
     var pusa = ["Electrical Engineering", "Electronics Communicataion & Engineering", "Mechanical Engineering",
                 "Civil Engineering", "Civil Engineering(spl. In Construction)", "Automobile Engineering",
                 "Printing Technology"];

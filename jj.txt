@@ -209,3 +209,31 @@ function thirdupdate() {
   } else
     var t = 0;
 }
+
+
+
+
+"BLS Institute of Technology Management	Delhi-Rohtak Road, Jakhoda",
+           "Institute of Information Technology and Management	Janakpuri",
+           "Chandra Prabhu Jain College of Higher Studies	Narela",
+           "Institute of Innovation Technology and Management	Janakpuri",
+           "New Delhi Institute of Management	Okhala",
+           "Fairfield Institute of Management & Technology	Kapashera",
+           "Sri Guru Tegh Bahadur Institute of Management & Information Technology",
+           "Trinity Institute of Higher Education	Dwarka",
+           "Kalka Institute of Research and Advanced Studies	Alaknanda",
+           "Vivekananda Institute of Management Studies	Pitampura",
+           "Maharaja Surajmal Institute	Janakpuri",
+           "Sirifort College of Computer Technology & Management	Rohini",
+           "Trinity Institute of Professional Studies	Dwarka",
+           "Ambedkar Integrated Institute of Information and Technology	Shakarpur",
+           "Integrated Institute of Technology	Dwarka",
+           "Jagan Institute of Management Studies",
+           "Jagannath International Management School	Vasant Kunj",
+           "JIMS Engineering Management Technical Campus (JEMTEC)",
+           "Kamal Institute of Higher Education and Advanced Technology (KIHEAT)",
+           "R.C. Institute Of Technology (RCIT)",
+           "Shree Ganpati Institute of Technology (SGIT)",
+           "BM Institute of Engineering and Technology",
+           "Jamia Milia Islamia",
+           ];
