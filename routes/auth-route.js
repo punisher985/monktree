@@ -1,21 +1,43 @@
-const router = require('express').Router();
 const passport = require('passport');
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
+const User = require('../models/User')
+const salt = bcrypt.genSaltSync(10);
+module.exports = (app) =>{
 
-// auth logout
-router.get('/logout', (req, res) => {
-    // handle with passport
-    res.send('logging out');
-});
 
-// auth with google+
-router.get('/google', passport.authenticate('google', {
-    scope: ['profile']
-}));
+  app.post('/auth/local_login',
+  function(req,res,next){
+    passport.authenticate("local")(req,res,next)},(req,res)=>{
+       console.log(req)
+       res.send({message:"done"})
+   });
 
-// callback route for google to redirect to
-// hand control to passport to use code to grab profile info
-router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
-    res.redirect('/dashboard')
-});
+  app.post('/auth/local_register', async(req, res) =>{
+    let user = await User.findOne({email:req.body.username}).catch(()=>{
+        return res.status(400).send({error:"Something Went wrong"})
+      });
+      console.log(req.body)
+    if(!user){
 
-module.exports = router;
+    user = await new User({
+        email:req.body.username,
+        password:bcrypt.hashSync(req.body.password,salt)
+    }).save().catch((err)=>{
+        console.log(err)
+    })
+    return res.status(200).send({message:"done"});
+    }
+   return res.status(501).send({error:"this email is already registered"})
+  });
+
+app.get('/api/logout',requireLogin,(req,res)=>{
+    req.logout();
+    res.send(req.user);
+})
+
+app.get('/api/current_user',requireLogin,(req,res)=>{
+    res.send(req.user)
+})
+
+}

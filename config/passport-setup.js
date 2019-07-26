@@ -1,43 +1,42 @@
 const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const keys = require('./keys');
-const User = require('../models/User');
+const LocalStrategy = require('passport-local').Strategy;
+const keys = require('./keys')
+const mongoose = require('mongoose');
+const User = require('../models/User')
+const bcrypt = require('bcryptjs');
 
-passport.serializeUser((user, done) => {
+module.exports = function(passport){
+  passport.serializeUser(function(user, done) {
     done(null, user.id);
-});
+  });
 
-passport.deserializeUser((id, done) => {
-    User.findById(id).then((user) => {
-        done(null, user);
+  passport.deserializeUser(function(id, done) {
+    User.findById(id, function(err, user) {
+      done(err, user);
     });
-});
+  });
+  // Local Strategy
+  passport.use(
+    new LocalStrategy( async (username, password, done) => {
+      // Match user
+      console.log(username)
+      const user = await  User.findOne({ username: username})
 
-passport.use(
-    new GoogleStrategy({
-        // options for google strategy
-        clientID: keys.google.clientID,
-        clientSecret: keys.google.clientSecret,
-        callbackURL: '/auth/google/redirect'
-    }, (accessToken, refreshToken, profile, done) => {
-        console.log(profile);
-        // check if user already exists in our own db
-        User.findOne({googleId: profile.id}).then((currentUser) => {
-            if(currentUser){
-                // already have this user
-                console.log('user is: ', currentUser);
-                done(null, currentUser);
-            } else {
-                // if not, create user in our db
-                new User({
-                    googleId: profile.id,
-                    username: profile._json.given_name,
-                    thumbnail: profile._json.picture
-                }).save().then((newUser) => {
-                    console.log('created new user: ', newUser);
-                    done(null, newUser);
-                });
-            }
+        if (!user) {
+          return done(null, false, { message: 'That username is not registered' });
+        }
+
+        // Match password
+        bcrypt.compare(password, user.password, (err, isMatch) => {
+          if (err) throw err;
+          if (isMatch) {
+            return done(null, user);
+          } else {
+            return done(null, false, {message: 'Password incorrect' });
+          }
         });
+
     })
-);
+  );
+
+}

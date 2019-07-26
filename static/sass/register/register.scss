@@ -15,16 +15,126 @@ html {
     font-size: 400%;
     padding: 5%;
     text-align: center;
-    span{
+
+    span {
       color: $orange;
       font-size: 200%;
       font-family: Segoe UI;
     }
   }
-  .fname{
+
+  .first {
+    -webkit-appearance: none;
+    background: url("../img/drop.png") scroll 98% 10px;
+    background-size: 110px;
+    @include inputs;
+    font-size: 40px;
+    width: 868px;
+    margin-top: 3%;
+
+    &:focus {
+      width: 901px;
+    }
+  }
+
+  .second {
+    -webkit-appearance: none;
+    background: url("../img/drop.png") scroll 98% 10px;
+    background-size: 110px;
+    @include inputs;
+    margin-top: 7%;
+    font-size: 40px;
+    width: 715px;
+
+    &:focus {
+      width: 868px;
+    }
+  }
+
+  .third {
+    -webkit-appearance: none;
+    background: url("../img/drop.png") scroll 98% 10px;
+    background-size: 110px;
+    @include inputs;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    font-size: 40px;
+    width: 550px;
+
+    &:focus {
+      width: 868px;
+    }
+  }
+
+  .para {
+    display: inline-block;
+
+    .fourth {
+      -webkit-appearance: none;
+      background: url("../img/drop.png") scroll 98% 10px;
+      background-size: 110px;
+      @include inputs;
+      margin-left: 8%;
+      display: inline-block;
+      font-size: 40px;
+      width: 425px;
+
+      &:focus {
+        width: 425px;
+      }
+    }
+  }
+
+  .uid {
+    @include inputs;
+    margin-left: 8%;
+    display: inline-block;
+    font-size: 50px;
+    width: 425px;
+
+    &:focus {
+      width: 425px;
+    }
+  }
+
+  .middle {
+    font-family: Segoe UI;
+    color: $orange;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -0.2%;
+  }
+
+  .admnyear {
+    @include inputs;
+    margin-left: 3%;
+    display: inline-block;
+    font-size: 50px;
+    width: 425px;
+
+    &:focus {
+      width: 425px;
+    }
+  }
+
+  .compyear {
+    @include inputs;
+    margin-left: 6%;
+    display: inline-block;
+    font-size: 50px;
+    width: 425px;
+    margin-bottom: 7%;
+
+    &:focus {
+      width: 425px;
+    }
+  }
+
+  .fname {
     @include inputs;
     width: 868px;
-    &:focus{
+
+    &:focus {
       width: 868px;
     }
   }
@@ -33,71 +143,80 @@ html {
     @include inputs;
     margin-top: 5%;
     width: 868px;
-    &:focus{
+
+    &:focus {
       width: 868px;
     }
   }
 
-  .contact{
+  .contact {
     @include inputs;
     margin-top: 5%;
     font-size: 40px;
     margin-left: 5%;
     display: inline-block;
     width: 407px;
-    &:focus{
+
+    &:focus {
       width: 429px;
     }
   }
 
-  .altcontact{
+  .altcontact {
     @include inputs;
     margin-top: 5%;
     font-size: 40px;
     margin-left: 5%;
-    display:inline-block;
+    display: inline-block;
     width: 407px;
-    &:focus{
+
+    &:focus {
       width: 429px;
     }
   }
 
-  .address{
+  .address {
     @include inputs;
     margin-top: 5%;
     width: 868px;
-    &:focus{
+
+    &:focus {
       width: 868px;
     }
   }
 
-  .city{
+  .city {
     @include inputs;
     margin-top: 5%;
     margin-left: 5%;
     width: 290px;
     display: inline-block;
-    &:focus{
+
+    &:focus {
       width: 290px;
     }
   }
-  .state{
+
+  .state {
     @include inputs;
     margin-top: 5%;
     margin-left: 2%;
     width: 290px;
     display: inline-block;
-    &:focus{
+
+    &:focus {
       width: 290px;
     }
   }
-  .pin{
+
+  .pin {
     @include inputs;
     margin-top: 5%;
     width: 235px;
     margin-left: 2%;
     display: inline-block;
-    &:focus{
+
+    &:focus {
       width: 235px;
     }
   }
@@ -106,13 +225,13 @@ html {
     @include buttons;
     margin-top: 5%;
   }
-
 }
 
-.foot-img{
+.foot-img {
   text-align: center;
   margin-top: 10%;
-  img{
+
+  img {
     height: 3%;
     width: 20%;
   }

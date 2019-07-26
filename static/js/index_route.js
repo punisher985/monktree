@@ -1,3 +1,7 @@
-function func(){
-  window.open("http://localhost:4001/auth/google","_self")
+function signup(){
+  window.open("http://192.168.0.11:4001/signup","_self")
+}
+
+function fail(){
+  window.open("http://192.168.0.11:4001/","_self")
 }

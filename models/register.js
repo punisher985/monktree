@@ -2,6 +2,24 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 var RegisterSchema = new Schema({
+  Course: {
+    type: String,
+  },
+  College: {
+    type: String,
+  },
+  Stream: {
+    type: String,
+  },
+  Aadhar: {
+    type: String,
+  },
+  Adminyear: {
+    type: String,
+  },
+  Compyear: {
+    type: String,
+  },
   Name: {
     type: String,
     required: [true, 'Name field is required']

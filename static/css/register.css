@@ -15,6 +15,215 @@ html {
     font-size: 200%;
     font-family: Segoe UI; }
 
+.box .first {
+  -webkit-appearance: none;
+  background: url("../img/drop.png") scroll 98% 10px;
+  background-size: 110px;
+  font-family: Segoe UI;
+  border: 0;
+  font-size: 50px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #FE4855;
+  padding: 14px 10px;
+  height: 88px;
+  font-weight: 400px;
+  outline: none;
+  color: black;
+  border-radius: 50px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 40px;
+  width: 868px;
+  margin-top: 3%; }
+  .box .first:focus {
+    border-color: #3498db; }
+  .box .first:focus {
+    width: 901px; }
+
+.box .second {
+  -webkit-appearance: none;
+  background: url("../img/drop.png") scroll 98% 10px;
+  background-size: 110px;
+  font-family: Segoe UI;
+  border: 0;
+  font-size: 50px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #FE4855;
+  padding: 14px 10px;
+  height: 88px;
+  font-weight: 400px;
+  outline: none;
+  color: black;
+  border-radius: 50px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  margin-top: 7%;
+  font-size: 40px;
+  width: 715px; }
+  .box .second:focus {
+    border-color: #3498db; }
+  .box .second:focus {
+    width: 868px; }
+
+.box .third {
+  -webkit-appearance: none;
+  background: url("../img/drop.png") scroll 98% 10px;
+  background-size: 110px;
+  font-family: Segoe UI;
+  border: 0;
+  font-size: 50px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #FE4855;
+  padding: 14px 10px;
+  height: 88px;
+  font-weight: 400px;
+  outline: none;
+  color: black;
+  border-radius: 50px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  font-size: 40px;
+  width: 550px; }
+  .box .third:focus {
+    border-color: #3498db; }
+  .box .third:focus {
+    width: 868px; }
+
+.box .para {
+  display: inline-block; }
+  .box .para .fourth {
+    -webkit-appearance: none;
+    background: url("../img/drop.png") scroll 98% 10px;
+    background-size: 110px;
+    font-family: Segoe UI;
+    border: 0;
+    font-size: 50px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #FE4855;
+    padding: 14px 10px;
+    height: 88px;
+    font-weight: 400px;
+    outline: none;
+    color: black;
+    border-radius: 50px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    margin-left: 8%;
+    display: inline-block;
+    font-size: 40px;
+    width: 425px; }
+    .box .para .fourth:focus {
+      border-color: #3498db; }
+    .box .para .fourth:focus {
+      width: 425px; }
+
+.box .uid {
+  font-family: Segoe UI;
+  border: 0;
+  font-size: 50px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #FE4855;
+  padding: 14px 10px;
+  height: 88px;
+  font-weight: 400px;
+  outline: none;
+  color: black;
+  border-radius: 50px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  margin-left: 8%;
+  display: inline-block;
+  font-size: 50px;
+  width: 425px; }
+  .box .uid:focus {
+    border-color: #3498db; }
+  .box .uid:focus {
+    width: 425px; }
+
+.box .middle {
+  font-family: Segoe UI;
+  color: #FE4855;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: -0.2%; }
+
+.box .admnyear {
+  font-family: Segoe UI;
+  border: 0;
+  font-size: 50px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #FE4855;
+  padding: 14px 10px;
+  height: 88px;
+  font-weight: 400px;
+  outline: none;
+  color: black;
+  border-radius: 50px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  margin-left: 3%;
+  display: inline-block;
+  font-size: 50px;
+  width: 425px; }
+  .box .admnyear:focus {
+    border-color: #3498db; }
+  .box .admnyear:focus {
+    width: 425px; }
+
+.box .compyear {
+  font-family: Segoe UI;
+  border: 0;
+  font-size: 50px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #FE4855;
+  padding: 14px 10px;
+  height: 88px;
+  font-weight: 400px;
+  outline: none;
+  color: black;
+  border-radius: 50px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  margin-left: 6%;
+  display: inline-block;
+  font-size: 50px;
+  width: 425px;
+  margin-bottom: 7%; }
+  .box .compyear:focus {
+    border-color: #3498db; }
+  .box .compyear:focus {
+    width: 425px; }
+
 .box .fname {
   font-family: Segoe UI;
   border: 0;

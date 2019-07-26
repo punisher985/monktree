@@ -23,3 +23,28 @@ html {
     margin-left: 30%;
     height: 40%;
     width: 40%; }
+
+input[type="submit"] {
+  font-family: Segoe UI;
+  border: 0;
+  font-size: 50px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FB7722), color-stop(#FF4C2C), to(#FE2339));
+  background-image: -webkit-linear-gradient(left, #FB7722, #FF4C2C, #FE2339);
+  background-image: -o-linear-gradient(left, #FB7722, #FF4C2C, #FE2339);
+  background-image: linear-gradient(90deg, #FB7722, #FF4C2C, #FE2339);
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #FE4855;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  height: 100px;
+  width: 280px;
+  border-radius: 50px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer; }
+  input[type="submit"]:hover {
+    background: #2ecc71; }

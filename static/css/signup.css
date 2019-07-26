@@ -1,0 +1,157 @@
+html {
+  background: url("../img/new-top.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0; }
+
+.form-sub {
+  margin-left: 20%;
+  margin-top: 20%; }
+
+.box {
+  width: 100%;
+  margin-top: 45%;
+  cursor: pointer; }
+  .box h1 {
+    font-family: Segoe UI;
+    font-size: 800%;
+    padding: 5%; }
+  .box h2 {
+    margin-top: -12%;
+    margin-left: 8%;
+    font-family: Segoe UI;
+    font-size: 400%;
+    margin-bottom: 5%; }
+  .box .user {
+    background: url("../img/account.png") scroll 8px 5px;
+    background-size: 110px;
+    font-family: Segoe UI;
+    border: 0;
+    font-size: 50px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #FE4855;
+    padding: 14px 10px;
+    width: 682px;
+    height: 121px;
+    font-weight: 400px;
+    outline: none;
+    color: black;
+    border-radius: 50px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s; }
+    .box .user:focus {
+      width: 868px;
+      border-color: #3498db; }
+  .box .mail {
+    font-family: Segoe UI;
+    border: 0;
+    font-size: 50px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #FE4855;
+    padding: 14px 10px;
+    width: 682px;
+    height: 121px;
+    font-weight: 400px;
+    outline: none;
+    color: black;
+    border-radius: 50px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s; }
+    .box .mail:focus {
+      width: 868px;
+      border-color: #3498db; }
+  .box .phone {
+    font-family: Segoe UI;
+    border: 0;
+    font-size: 50px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #FE4855;
+    padding: 14px 10px;
+    width: 682px;
+    height: 121px;
+    font-weight: 400px;
+    outline: none;
+    color: black;
+    border-radius: 50px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s; }
+    .box .phone:focus {
+      width: 868px;
+      border-color: #3498db; }
+  .box input[type="password"] {
+    background: url("../img/lock.png") scroll 20px 30px;
+    background-size: 60px;
+    font-family: Segoe UI;
+    border: 0;
+    font-size: 50px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #FE4855;
+    padding: 14px 10px;
+    width: 682px;
+    height: 121px;
+    font-weight: 400px;
+    outline: none;
+    color: black;
+    border-radius: 50px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s; }
+    .box input[type="password"]:focus {
+      width: 868px;
+      border-color: #3498db; }
+  .box strong {
+    font-family: Segoe UI;
+    margin-left: 50%;
+    font-size: 30px; }
+    .box strong a {
+      text-decoration: none;
+      color: black; }
+  .box input[type="submit"] {
+    font-family: Segoe UI;
+    border: 0;
+    font-size: 50px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#FB7722), color-stop(#FF4C2C), to(#FE2339));
+    background-image: -webkit-linear-gradient(left, #FB7722, #FF4C2C, #FE2339);
+    background-image: -o-linear-gradient(left, #FB7722, #FF4C2C, #FE2339);
+    background-image: linear-gradient(90deg, #FB7722, #FF4C2C, #FE2339);
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #FE4855;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    height: 100px;
+    width: 280px;
+    border-radius: 50px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    cursor: pointer; }
+    .box input[type="submit"]:hover {
+      background: #2ecc71; }
+
+.foot {
+  margin-top: 8%;
+  text-align: center; }
+  .foot strong {
+    font-family: Segoe UI;
+    font-size: 45px; }
+    .foot strong a {
+      text-decoration: none;
+      color: #ff5050; }
