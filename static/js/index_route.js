@@ -1,7 +1,7 @@
 function signup(){
-  window.open("http://192.168.0.11:4001/signup","_self")
+  window.open("http://monktreenew.herokuapp.com/signup","_self")
 }
 
 function fail(){
-  window.open("http://192.168.0.11:4001/","_self")
+  window.open("http://monktreenew.herokuapp.com/","_self")
 }
