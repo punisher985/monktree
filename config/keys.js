@@ -5,7 +5,7 @@ module.exports = {
             clientSecret: 'C0jTWkKRFK2UL_JfuD34_mOH'
         },
         mongodb: {
-            dbURI: 'mongodb://Tarun:tarun2510@ds247637.mlab.com:47637/monktree-app'
+            dbURI: 'mongodb://Tarun:tarun2510@ds247637.mlab.com:47637/monktree'
         },
         session: {
             cookieKey: 'monktreebookbank'
