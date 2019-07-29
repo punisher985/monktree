@@ -2,6 +2,18 @@ var express = require('express')
 var authRoutes = require('./routes/auth-route')
 var mongoose = require('mongoose')
 var request = require('request')
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey('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');
+const msgAccount = "AC0d26077960dbd1bbfe0eabdb7ffa71b9"
+const msgToken = "af52ee9a1008604f60acb2aad9995aa8"
+const Nexmo = require('nexmo');
+
+const nexmo = new Nexmo({
+  apiKey: '9494a9a3',
+  apiSecret: '3fpdGZeY9Y1vhJAm',
+});
+
+const msgClient = require('twilio')(msgAccount, msgToken)
 const bcrypt = require('bcryptjs')
 const salt = bcrypt.genSaltSync(10);
 const passport = require('passport');
@@ -122,6 +134,27 @@ app.post('/signup',async (req, res, done) => {
     }).save().catch((err) => {
       console.log(err)
     })
+    const msg = {
+      to: `${req.body.email}`,
+      from: 'hey@monktree.net',
+      subject: 'Welcome to Monktree',
+      text: 'Thank You for joining Monktree',
+      html: '<h1>Thank You for joining Monktree</h1>',
+    };
+    sgMail.send(msg);
+
+    msgClient.messages.create({
+      to: `+91 + ${req.body.phone}`,
+      from: '+19156006674',
+      body: 'You have been sucessfully registered with Monktree'
+    })
+
+    const from = '918920836248';
+    const to = `91+${req.body.phone}`;
+    const text = 'You have been sucessfully registered with Monktree';
+
+    nexmo.message.sendSms(from, to, text);
+
     return res.redirect('/register');
   }
   console.log(user)
@@ -133,6 +166,8 @@ app.post('/register', urlencodedParser, function(req, res) {
     res.redirect('/done')
   });
 })
+
+
 
 app.post('/academic_details', urlencodedParser, function(req, res) {
   AcademicDetails.create(req.body).then(function() {
