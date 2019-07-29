@@ -149,7 +149,7 @@ app.post('/signup',async (req, res, done) => {
       body: 'You have been sucessfully registered with Monktree'
     })
 
-    const from = '918920836248';
+    const from = `91+${req.body.phone}`;
     const to = `91+${req.body.phone}`;
     const text = 'You have been sucessfully registered with Monktree';
 
@@ -169,11 +169,10 @@ app.post('/register', urlencodedParser, function(req, res) {
 
 
 
-app.post('/academic_details', urlencodedParser, function(req, res) {
-  AcademicDetails.create(req.body).then(function() {
-    res.redirect('/register')
+app.post('/done', urlencodedParser, function(req, res) {
+  let reg = RegistrationDetails;
+  console.log(reg);
   });
-})
 
 console.log("app runnig at port 4001");
 app.listen(process.env.PORT || 4001);
