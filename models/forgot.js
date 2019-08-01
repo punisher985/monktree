@@ -8,5 +8,5 @@ var ForgotSchema = new Schema({
   }
 });
 
-const ForgotDetails = mongoose.model('forgotpassword', ForgotSchema);
+const ForgotDetails = mongoose.model('forgotpass', ForgotSchema);
 module.exports = ForgotDetails;
