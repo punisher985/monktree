@@ -168,11 +168,5 @@ app.post('/register', urlencodedParser, function(req, res) {
 })
 
 
-
-app.post('/done', urlencodedParser, function(req, res) {
-  let reg = RegistrationDetails;
-  console.log(reg);
-  });
-
 console.log("app runnig at port 4001");
 app.listen(process.env.PORT || 4001);
