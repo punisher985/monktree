@@ -167,6 +167,11 @@ app.post('/register', urlencodedParser, function(req, res) {
   });
 })
 
+app.post('/forgotpassword', urlencodedParser, function(req, res) {
+  ForgotDetails.create(req.body).then(function() {
+    res.render('recover')
+  });
+})
 
 console.log("app runnig at port 4001");
 app.listen(process.env.PORT || 4001);
