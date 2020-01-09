@@ -15,24 +15,23 @@ module.exports = (app) =>{
    });
 
   app.post('/auth/local_register', async(req, res) =>{
-    let user = await User.findOne({email:req.body.username}).populate({ path: 'registering', ref: Register }).exec((err, userRegister)=> {
+    User.findOne({email:req.body.username}).populate({ path: 'registering'}).exec((err, userRegister)=> {
   if (err) return handleError(err);
   console.log(userRegister);
 }).catch(()=>{
         return res.status(400).send({error:"Something Went wrong"})
       });
       console.log(req.body)
-    if(!user){
+//    if(!user){
 
-    user = await new User({
-        email:req.body.username,
-        password:bcrypt.hashSync(req.body.password,salt)
-    }).save().catch((err)=>{
-        console.log(err)
-    })
-    return res.status(200).send({message:"done"});
-    }
-   return res.status(501).send({error:"this email is already registered"})
+//    user = await new User({
+//        email:req.body.username,
+//        password:bcrypt.hashSync(req.body.password,salt)
+//    }).save().catch((err)=>{
+//        console.log(err)
+//    return res.status(200).send({message:"done"});
+//    }
+//   return res.status(501).send({error:"this email is already registered"})
   });
 
 app.get('/api/logout',requireLogin,(req,res)=>{
