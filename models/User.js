@@ -19,7 +19,7 @@ var UserSchema = new Schema({
     type: String
   },
   registering: {
-    type: Schema.Types.ObjectId, model: 'RegistrationDetails'
+    type: Schema.Types.ObjectId, ref: 'register'
   }
 });
 

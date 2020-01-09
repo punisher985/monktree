@@ -128,8 +128,9 @@ app.post('/signup',async (req, res, done) => {
   });
   console.log(req.body)
   if (!user) {
-
+    let register = await new RegistrationDetails({}).save();
     user = new User({
+      registering: register._id,
       username: req.body.username,
       phone: req.body.phone,
       email: req.body.email,

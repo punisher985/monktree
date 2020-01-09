@@ -15,7 +15,7 @@ module.exports = (app) =>{
    });
 
   app.post('/auth/local_register', async(req, res) =>{
-    let user = await User.findOne({email:req.body.username}).populate({ path: 'registering', model: Register }).exec((err, userRegister)=> {
+    let user = await User.findOne({email:req.body.username}).populate({ path: 'registering', ref: Register }).exec((err, userRegister)=> {
   if (err) return handleError(err);
   console.log(userRegister);
 }).catch(()=>{
