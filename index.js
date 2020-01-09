@@ -85,6 +85,10 @@ app.get('/fail', function(req, res) {
   res.render('fail')
 })
 
+app.get('/fail', function(req, res) {
+  res.render('champ')
+})
+
 app.get('/taken', function(req, res) {
   res.render('taken')
 })
@@ -103,7 +107,7 @@ const authCheck = (req, res, next) => {
 
 app.get('/dashboard', authCheck, function(req, res) {
   res.render('dashboard', {
-    user: req.user
+    user: req.user,
   })
 })
 

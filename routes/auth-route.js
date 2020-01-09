@@ -2,6 +2,7 @@ const passport = require('passport');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const User = require('../models/User')
+const Register = require('../models/register')
 const salt = bcrypt.genSaltSync(10);
 module.exports = (app) =>{
 
@@ -14,7 +15,10 @@ module.exports = (app) =>{
    });
 
   app.post('/auth/local_register', async(req, res) =>{
-    let user = await User.findOne({email:req.body.username}).catch(()=>{
+    let user = await User.findOne({email:req.body.username}).populate({ path: 'registering', model: Register }).exec((err, userRegister)=> {
+  if (err) return handleError(err);
+  console.log(userRegister);
+}).catch(()=>{
         return res.status(400).send({error:"Something Went wrong"})
       });
       console.log(req.body)

@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const RegistrationDetails = require('./register')
 const Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
@@ -16,6 +17,9 @@ var UserSchema = new Schema({
   },
   conpassword: {
     type: String
+  },
+  registering: {
+    type: Schema.Types.ObjectId, model: 'RegistrationDetails'
   }
 });
 
